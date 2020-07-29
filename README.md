@@ -54,43 +54,29 @@ UICTFontTextStyleFootnote | .footnote
 UICTFontTextStyleCaption1 | .caption1
 UICTFontTextStyleCaption2 | .caption2
 
-#### Avoiding fallback on preferred font (optional)
-
-To avoid falling back on preferred font, I suggest you to define an enum or a struct that define your text style configuration in one place :
+#### Define your styles
 
 ```Swift
-enum TextStylesConfiguration: String {
-    case circularStd = "Style1"
-    case skScaledFont = "skScaledFontStyle"
+extension SKScaledFontStyle {
+    var style1: String { "style1" }
+    var skScaledFont: String { "skScaledFontStyle" }
 }
-
-OR
-
-struct TextStylesConfiguration {
-    static let circularStd = "Style1"
-    static let skScaledFont = "skScaledFontStyle"
-}
-
-OR
-
-any way yout want
 ```
 
-The string value must match a plist file in project, otherwise it will fallback on preferred font.
+The ***string value must match a plist file*** in project, otherwise it will fallback on preferred font.
 
 ### SwiftUI usage
 
 ```Swift
-Text("Large title").scaledFont(textStylesFilename: TextStylesConfiguration.skScaledFont.rawValue, style: .largeTitle)
+Text("Large title").scaledFont(skStyle: \.style1, style: .title1)
 
-Text("Large title").scaledFont(textStylesFilename: TextStylesConfiguration.circularStd.rawValue, style: .title1)
+Text("Large title").scaledFont(skStyle: \.skScaledFont, style: .largeTitle)
 ```
 
 ### UIKit usage
 
 ```Swift
-let style1 = SKScaledFont(textStylesFilename: TextStylesConfiguration.circularStd.rawValue)
-
+let style1 = SKScaledFont(style: \.style1)
 largeTitle.font = style1.font(forTextStyle: .largeTitle)
 largeTitle.adjustsFontForContentSizeCategory = true
 ```

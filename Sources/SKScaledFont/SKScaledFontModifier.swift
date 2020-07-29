@@ -19,11 +19,11 @@ import SwiftUI
 struct ScaledFont: ViewModifier {
     @Environment(\.sizeCategory) var sizeCategory
     
-    var textStylesFilename: String
+    var skStyle: KeyPath<SKScaledFontStyle, String>
     var style: UIFont.TextStyle
     
     func body(content: Content) -> some View {
-        let scaledFont = SKScaledFont(textStylesFilename: textStylesFilename)
+        let scaledFont = SKScaledFont(style: skStyle)
         let font = scaledFont.font(forTextStyle: style)
         
         return content.font(Font.custom(font.fontName, size: font.pointSize))
@@ -35,8 +35,8 @@ struct ScaledFont: ViewModifier {
 @available(tvOS, introduced: 13, deprecated: 14, message: "Use `.font(.custom(String, size: CGFlaot, relativeTo: UIFont.TextStyle))`")
 @available(watchOS, introduced: 13, deprecated: 14, message: "Use `.font(.custom(String, size: CGFlaot, relativeTo: UIFont.TextStyle))`")
 public extension View {
-    func scaledFont(textStylesFilename: String, style: UIFont.TextStyle) -> some View {
-        return self.modifier(ScaledFont(textStylesFilename: textStylesFilename, style: style))
+    func scaledFont(skStyle: KeyPath<SKScaledFontStyle, String>, style: UIFont.TextStyle) -> some View {
+        return self.modifier(ScaledFont(skStyle: skStyle, style: style))
     }
 }
 

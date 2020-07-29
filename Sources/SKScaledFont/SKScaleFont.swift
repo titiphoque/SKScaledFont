@@ -18,12 +18,17 @@ public final class SKScaledFont {
     private typealias StyleDictionary = [UIFont.TextStyle.RawValue: FontDescription]
     private var styleDictionary: StyleDictionary?
     
+    public convenience init(style: KeyPath<SKScaledFontStyle, String>) {
+        let fontStyle = SKScaledFontStyle()
+        self.init(textStylesFilename: fontStyle[keyPath: style])
+    }
+    
     /// Create a `ScaledFont`
     ///
     /// - Parameter fontName: Name of a plist file (without the extension)
     ///   in the main bundle that contains the style dictionary used to
     ///   scale fonts for each text style.
-    public init(textStylesFilename: String) {
+    private init(textStylesFilename: String) {
         // Compute filename
         let sizeFilename = "\(textStylesFilename)-\(Int(UIScreen.main.bounds.height))h"
         

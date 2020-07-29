@@ -9,9 +9,9 @@
 import SwiftUI
 import SKScaledFont
 
-enum TextStylesConfiguration: String {
-    case circularStd = "CircularStd"
-    case skScaledFont = "skScaledFontStyle"
+extension SKScaledFontStyle {
+    var circularStd: String { "CircularStd" }
+    var skScaledFont: String { "skScaledFontStyle" }
 }
 
 struct ContentView: View {
@@ -20,7 +20,7 @@ struct ContentView: View {
             VStack(alignment: .center, spacing: 12, content: {
                 Group {
                     Text("SKScaledFont")
-                        .scaledFont(textStylesFilename: TextStylesConfiguration.skScaledFont.rawValue, style: .largeTitle)
+                        .scaledFont(skStyle: \.skScaledFont, style: .largeTitle)
                         .minimumScaleFactor(0.7)
                         .lineLimit(1)
                     
@@ -28,20 +28,20 @@ struct ContentView: View {
                 }
                 
                 Group {
-                    Text("Large title").scaledFont(textStylesFilename: TextStylesConfiguration.circularStd.rawValue, style: .largeTitle)
-                    Text("Title1").scaledFont(textStylesFilename: TextStylesConfiguration.circularStd.rawValue, style: .title1)
-                    Text("Title2").scaledFont(textStylesFilename: TextStylesConfiguration.circularStd.rawValue, style: .title2)
-                    Text("Title3").scaledFont(textStylesFilename: TextStylesConfiguration.circularStd.rawValue, style: .title3)
-                    Text("Headline").scaledFont(textStylesFilename: TextStylesConfiguration.circularStd.rawValue, style: .headline)
-                    Text("Subheadline").scaledFont(textStylesFilename: TextStylesConfiguration.circularStd.rawValue, style: .subheadline)
+                    Text("Large title").scaledFont(skStyle: \.circularStd, style: .largeTitle)
+                    Text("Title1").scaledFont(skStyle: \.circularStd, style: .title1)
+                    Text("Title2").scaledFont(skStyle: \.circularStd, style: .title2)
+                    Text("Title3").scaledFont(skStyle: \.circularStd, style: .title3)
+                    Text("Headline").scaledFont(skStyle: \.circularStd, style: .headline)
+                    Text("Subheadline").scaledFont(skStyle: \.circularStd, style: .subheadline)
                 }
                 
                 Group {
-                    Text("Body").scaledFont(textStylesFilename: TextStylesConfiguration.circularStd.rawValue, style: .body)
-                    Text("Callout").scaledFont(textStylesFilename: TextStylesConfiguration.circularStd.rawValue, style: .callout)
-                    Text("Footnote").scaledFont(textStylesFilename: TextStylesConfiguration.circularStd.rawValue, style: .footnote)
-                    Text("Caption1").scaledFont(textStylesFilename: TextStylesConfiguration.circularStd.rawValue, style: .caption1)
-                    Text("Caption2").scaledFont(textStylesFilename: TextStylesConfiguration.circularStd.rawValue, style: .caption2)
+                    Text("Body").scaledFont(skStyle: \.circularStd, style: .body)
+                    Text("Callout").scaledFont(skStyle: \.circularStd, style: .callout)
+                    Text("Footnote").scaledFont(skStyle: \.circularStd, style: .footnote)
+                    Text("Caption1").scaledFont(skStyle: \.circularStd, style: .caption1)
+                    Text("Caption2").scaledFont(skStyle: \.circularStd, style: .caption2)
                 }
             })
             .padding(32)

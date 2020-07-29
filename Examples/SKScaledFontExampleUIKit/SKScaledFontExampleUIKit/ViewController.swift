@@ -9,9 +9,9 @@
 import UIKit
 import SKScaledFont
 
-enum TextStylesConfiguration: String {
-    case circularStd = "CircularStd"
-    case skScaledFont = "skScaledFontStyle"
+extension SKScaledFontStyle {
+    var circularStd: String { "CircularStd" }
+    var skScaledFont: String { "skScaledFontStyle" }
 }
 
 class LargeTitleCircularStdLabel: UILabel {
@@ -27,7 +27,7 @@ class LargeTitleCircularStdLabel: UILabel {
     }
     
     func commonInit() {
-        self.font = SKScaledFont(textStylesFilename: TextStylesConfiguration.circularStd.rawValue).font(forTextStyle: .largeTitle)
+        self.font = SKScaledFont(style: \.circularStd).font(forTextStyle: .largeTitle)
         self.adjustsFontForContentSizeCategory = true
     }
 }
@@ -53,7 +53,7 @@ class ViewController: UIViewController {
         
         setupSKScaledFont()
         
-        let circularStdStyle = SKScaledFont(textStylesFilename: TextStylesConfiguration.circularStd.rawValue)
+        let circularStdStyle = SKScaledFont(style: \.circularStd)
         
         largeTitle.font = circularStdStyle.font(forTextStyle: .largeTitle)
         largeTitle.adjustsFontForContentSizeCategory = true
@@ -101,7 +101,7 @@ class ViewController: UIViewController {
     }
 
     func setupSKScaledFont() {
-        let skScaledFontStyle = SKScaledFont(textStylesFilename: TextStylesConfiguration.skScaledFont.rawValue)
+        let skScaledFontStyle = SKScaledFont(style: \.skScaledFont)
         skScaledFontTitleLabel.font = skScaledFontStyle.font(forTextStyle: .largeTitle)
         skScaledFontTitleLabel.text = "SKScaledFont"
     }
