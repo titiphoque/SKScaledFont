@@ -97,6 +97,14 @@ largeTitle.adjustsFontForContentSizeCategory = true
 
 You can also subclass to define one class per style, you will avoid redundant code.
 
+### Advanced
+
+SKScaledFont provide a way to define text styles for every screen size. Just define a new plist named ```Style1-568h.plist``` to handle iPhone 5/5S/SE.
+The plist name follow the following format: ```Style1-deviceHeighth.plist```. Some example:
+* ```Style1-568h.plist```
+* ```Style1-667h.plist```
+* ```Style1-736h.plist```
+
 ## Requirements
 
 **iOS** version **>= 11.0**
