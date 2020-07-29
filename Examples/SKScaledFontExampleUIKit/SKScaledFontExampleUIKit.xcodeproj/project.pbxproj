@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		339FB42C24D19ECC00B2ED23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339FB42B24D19ECC00B2ED23 /* AppDelegate.swift */; };
+		339FB42E24D19ECC00B2ED23 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339FB42D24D19ECC00B2ED23 /* SceneDelegate.swift */; };
+		339FB43024D19ECC00B2ED23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339FB42F24D19ECC00B2ED23 /* ViewController.swift */; };
+		339FB43324D19ECC00B2ED23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 339FB43124D19ECC00B2ED23 /* Main.storyboard */; };
+		339FB43524D19ECD00B2ED23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 339FB43424D19ECD00B2ED23 /* Assets.xcassets */; };
+		339FB43824D19ECD00B2ED23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 339FB43624D19ECD00B2ED23 /* LaunchScreen.storyboard */; };
+		339FB44824D19EF200B2ED23 /* CircularStd-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 339FB44024D19EF200B2ED23 /* CircularStd-Book.ttf */; };
+		339FB44924D19EF200B2ED23 /* CircularStd-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 339FB44124D19EF200B2ED23 /* CircularStd-Bold.ttf */; };
+		339FB44A24D19EF200B2ED23 /* CircularStd-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 339FB44224D19EF200B2ED23 /* CircularStd-Medium.ttf */; };
+		339FB44B24D19EF200B2ED23 /* CircularStd-667h.plist in Resources */ = {isa = PBXBuildFile; fileRef = 339FB44424D19EF200B2ED23 /* CircularStd-667h.plist */; };
+		339FB44C24D19EF200B2ED23 /* CircularStd-568h.plist in Resources */ = {isa = PBXBuildFile; fileRef = 339FB44524D19EF200B2ED23 /* CircularStd-568h.plist */; };
+		339FB44D24D19EF200B2ED23 /* skScaledFontStyle.plist in Resources */ = {isa = PBXBuildFile; fileRef = 339FB44624D19EF200B2ED23 /* skScaledFontStyle.plist */; };
+		339FB44E24D19EF200B2ED23 /* CircularStd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 339FB44724D19EF200B2ED23 /* CircularStd.plist */; };
+		339FB45224D19F2400B2ED23 /* SKScaledFont in Frameworks */ = {isa = PBXBuildFile; productRef = 339FB45124D19F2400B2ED23 /* SKScaledFont */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		339FB42824D19ECC00B2ED23 /* SKScaledFontExampleUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKScaledFontExampleUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		339FB42B24D19ECC00B2ED23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		339FB42D24D19ECC00B2ED23 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		339FB42F24D19ECC00B2ED23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		339FB43224D19ECC00B2ED23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		339FB43424D19ECD00B2ED23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		339FB43724D19ECD00B2ED23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		339FB43924D19ECD00B2ED23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		339FB44024D19EF200B2ED23 /* CircularStd-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Book.ttf"; sourceTree = "<group>"; };
+		339FB44124D19EF200B2ED23 /* CircularStd-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Bold.ttf"; sourceTree = "<group>"; };
+		339FB44224D19EF200B2ED23 /* CircularStd-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Medium.ttf"; sourceTree = "<group>"; };
+		339FB44424D19EF200B2ED23 /* CircularStd-667h.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CircularStd-667h.plist"; sourceTree = "<group>"; };
+		339FB44524D19EF200B2ED23 /* CircularStd-568h.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CircularStd-568h.plist"; sourceTree = "<group>"; };
+		339FB44624D19EF200B2ED23 /* skScaledFontStyle.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = skScaledFontStyle.plist; sourceTree = "<group>"; };
+		339FB44724D19EF200B2ED23 /* CircularStd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CircularStd.plist; sourceTree = "<group>"; };
+		339FB44F24D19F1D00B2ED23 /* SKScaledFont */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SKScaledFont; path = ../..; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		339FB42524D19ECC00B2ED23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				339FB45224D19F2400B2ED23 /* SKScaledFont in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		339FB41F24D19ECC00B2ED23 = {
+			isa = PBXGroup;
+			children = (
+				339FB42A24D19ECC00B2ED23 /* SKScaledFontExampleUIKit */,
+				339FB42924D19ECC00B2ED23 /* Products */,
+				339FB45024D19F2400B2ED23 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		339FB42924D19ECC00B2ED23 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				339FB42824D19ECC00B2ED23 /* SKScaledFontExampleUIKit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		339FB42A24D19ECC00B2ED23 /* SKScaledFontExampleUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				339FB43F24D19EF200B2ED23 /* Fonts */,
+				339FB44324D19EF200B2ED23 /* TextStylesConfiguration */,
+				339FB42B24D19ECC00B2ED23 /* AppDelegate.swift */,
+				339FB42D24D19ECC00B2ED23 /* SceneDelegate.swift */,
+				339FB42F24D19ECC00B2ED23 /* ViewController.swift */,
+				339FB43124D19ECC00B2ED23 /* Main.storyboard */,
+				339FB43424D19ECD00B2ED23 /* Assets.xcassets */,
+				339FB43624D19ECD00B2ED23 /* LaunchScreen.storyboard */,
+				339FB43924D19ECD00B2ED23 /* Info.plist */,
+			);
+			path = SKScaledFontExampleUIKit;
+			sourceTree = "<group>";
+		};
+		339FB43F24D19EF200B2ED23 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				339FB44024D19EF200B2ED23 /* CircularStd-Book.ttf */,
+				339FB44124D19EF200B2ED23 /* CircularStd-Bold.ttf */,
+				339FB44224D19EF200B2ED23 /* CircularStd-Medium.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		339FB44324D19EF200B2ED23 /* TextStylesConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				339FB44424D19EF200B2ED23 /* CircularStd-667h.plist */,
+				339FB44524D19EF200B2ED23 /* CircularStd-568h.plist */,
+				339FB44624D19EF200B2ED23 /* skScaledFontStyle.plist */,
+				339FB44724D19EF200B2ED23 /* CircularStd.plist */,
+			);
+			path = TextStylesConfiguration;
+			sourceTree = "<group>";
+		};
+		339FB45024D19F2400B2ED23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				339FB44F24D19F1D00B2ED23 /* SKScaledFont */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		339FB42724D19ECC00B2ED23 /* SKScaledFontExampleUIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 339FB43C24D19ECD00B2ED23 /* Build configuration list for PBXNativeTarget "SKScaledFontExampleUIKit" */;
+			buildPhases = (
+				339FB42424D19ECC00B2ED23 /* Sources */,
+				339FB42524D19ECC00B2ED23 /* Frameworks */,
+				339FB42624D19ECC00B2ED23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SKScaledFontExampleUIKit;
+			packageProductDependencies = (
+				339FB45124D19F2400B2ED23 /* SKScaledFont */,
+			);
+			productName = SKScaledFontExampleUIKit;
+			productReference = 339FB42824D19ECC00B2ED23 /* SKScaledFontExampleUIKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		339FB42024D19ECC00B2ED23 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Thibaut Schmitt";
+				TargetAttributes = {
+					339FB42724D19ECC00B2ED23 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = 339FB42324D19ECC00B2ED23 /* Build configuration list for PBXProject "SKScaledFontExampleUIKit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 339FB41F24D19ECC00B2ED23;
+			productRefGroup = 339FB42924D19ECC00B2ED23 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				339FB42724D19ECC00B2ED23 /* SKScaledFontExampleUIKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		339FB42624D19ECC00B2ED23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				339FB44C24D19EF200B2ED23 /* CircularStd-568h.plist in Resources */,
+				339FB44A24D19EF200B2ED23 /* CircularStd-Medium.ttf in Resources */,
+				339FB44924D19EF200B2ED23 /* CircularStd-Bold.ttf in Resources */,
+				339FB44E24D19EF200B2ED23 /* CircularStd.plist in Resources */,
+				339FB44824D19EF200B2ED23 /* CircularStd-Book.ttf in Resources */,
+				339FB43824D19ECD00B2ED23 /* LaunchScreen.storyboard in Resources */,
+				339FB43524D19ECD00B2ED23 /* Assets.xcassets in Resources */,
+				339FB44B24D19EF200B2ED23 /* CircularStd-667h.plist in Resources */,
+				339FB43324D19ECC00B2ED23 /* Main.storyboard in Resources */,
+				339FB44D24D19EF200B2ED23 /* skScaledFontStyle.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		339FB42424D19ECC00B2ED23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				339FB43024D19ECC00B2ED23 /* ViewController.swift in Sources */,
+				339FB42C24D19ECC00B2ED23 /* AppDelegate.swift in Sources */,
+				339FB42E24D19ECC00B2ED23 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		339FB43124D19ECC00B2ED23 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				339FB43224D19ECC00B2ED23 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		339FB43624D19ECD00B2ED23 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				339FB43724D19ECD00B2ED23 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		339FB43A24D19ECD00B2ED23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		339FB43B24D19ECD00B2ED23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		339FB43D24D19ECD00B2ED23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QH6KR5PAQ7;
+				INFOPLIST_FILE = SKScaledFontExampleUIKit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Openium.SKScaledFontExampleUIKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		339FB43E24D19ECD00B2ED23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QH6KR5PAQ7;
+				INFOPLIST_FILE = SKScaledFontExampleUIKit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Openium.SKScaledFontExampleUIKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		339FB42324D19ECC00B2ED23 /* Build configuration list for PBXProject "SKScaledFontExampleUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				339FB43A24D19ECD00B2ED23 /* Debug */,
+				339FB43B24D19ECD00B2ED23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		339FB43C24D19ECD00B2ED23 /* Build configuration list for PBXNativeTarget "SKScaledFontExampleUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				339FB43D24D19ECD00B2ED23 /* Debug */,
+				339FB43E24D19ECD00B2ED23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		339FB45124D19F2400B2ED23 /* SKScaledFont */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SKScaledFont;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 339FB42024D19ECC00B2ED23 /* Project object */;
+}
