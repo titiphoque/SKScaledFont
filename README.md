@@ -39,8 +39,9 @@ In a ```Style1.plist``` file, add an entry for every ```UIFont.TextStyle``` you 
 ```
 
 Here is the list of all styles:
-Plist key | UIFont.TextStyle
---------- | ----------------
+
+Plist key | UIFont.TextStyle 
+--------- | ---------------- 
 UICTFontTextStyleTitle0 | .largeTitle
 UICTFontTextStyleTitle1 | .title1
 UICTFontTextStyleTitle2 | .title2
