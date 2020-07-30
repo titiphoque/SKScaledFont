@@ -100,3 +100,8 @@ The plist name follow the following format: ```Style1-deviceHeighth.plist```. So
 ### Swift Package Manager
 
 **TODO**
+
+## Future release
+
+[] Scaling font without SKScaledFontStyle
+[] Add logger to print font size request and the new font size scaled
